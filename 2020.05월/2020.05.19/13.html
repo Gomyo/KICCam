@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var checkfrm = function () {
+            console.log(document.frm.s.options);
+            console.log(document.frm.s.options.length);
+
+            // 선택된 위치
+            console.log(document.frm.s.options.selectedIndex);
+            console.log(document.frm.s.options[document.frm.s.options.selectedIndex].value);
+            console.log(document.frm.s.options[document.frm.s.options.selectedIndex].text);
+        } // 밑에 사과가 text값 value값은 1 ,2 ,3   
+    </script>
+</head>
+
+<body>
+    <form action="test1.jsp" name="frm">
+        <select name="s">
+            <option value="1">사과</option>
+            <option value="2">딸기</option>
+            <option value="3">수박</option>
+        </select>
+        <input type="button" value="검사하기" onclick="checkfrm()" />
+    </form>
+
+</body>
+
+</html>

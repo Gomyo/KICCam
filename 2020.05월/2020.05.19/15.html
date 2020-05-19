@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    </style>
+    <script type="text/javascript">
+        var viewTag = function() {
+            // h1이라는 id에 접속할래!
+            var h1 = document.getElementById('h1');
+            console.log(h1);
+            console.log(typeof h1); // 문자열로 보이지만 문자열이 아님!
+
+            // innerHTML 프로퍼티의 값은 text/html으로 파싱한 결과입니다. 그래서 상대적으로 파싱이 느립니다. (사실 큰 차이는 아닙니다.)  XSS(Cross-Site Scripting) 공격에 취약한 사례. 보안 취약
+            console.log(h1.innerHTML);   // Header1 
+            // textContent의 값은 식별자 노드의 내부 콘텐츠를 text/plain 으로 파싱(Parsing)한 결과입니다. 즉, 해당 요소 내부의 원시 텍스트(raw text) 입니다. 그래서 다른 프로퍼티들에 비해 파싱이 빠릅니다.
+            console.log(h1.textContent); // Header1
+        };
+        var modifyTag = function() {
+            var h2 = document.getElementById('h2');
+            h2.innerHTML = '<i id="i1">hello innerhtml</i>'
+        };
+        var deleteTag = function() {
+            var h2 = document.getElementById('h2');
+            var i1 = document.getElementById('i1');
+            h2.removeChild(i1);
+        };
+    </script>
+</head>
+<body>
+    <input type="button" value="tag 보기" onclick="viewTag()"/>
+    <input type="button" value="tag 수정" onclick="modifyTag()"/>
+    <input type="button" value="tag 삭제" onclick="deleteTag()" />
+    <hr/>
+    <h1 id='h1'>Header1</h1>
+    <h1 id='h2'>
+        <i>Header2</i>
+    </h1>
+</body>
+</html>
