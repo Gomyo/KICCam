@@ -8,8 +8,8 @@
     </style>
     <script type="text/javascript">
     // iframe 도입하기
-        var goSearch = function() {
-            
+        var goSearch = function(url) {
+            document.getElementById('searchIF').src = url
         };
     </script>
 </head>
@@ -17,13 +17,12 @@
     <form name="frm">
         검색어 <input type="text" name="query" placeholder="검색어 입력"/>
         <select name="sitename">
-            <option value="naver">네이버</option>
-            <option value="daum">다음</option>
-            <option value="google">구글</option>
+            <option value="naver" onselect="goSearch("https://m.naver.com")>NAVER</option>
+            <option value="daum" onselect="goSearch("https://m.daum.net")>DAUM</option>
+            <option value="google" onselect="goSearch("https://google.com")>GOOGLE</option>
         </select>
-        <input type="button" value="OPEN" onclick="goSearch()" />
+        <input type="button" value="SEARCH" onclick="goSearch()" />
     </form>
-    <script type="text/javascript">
-    </script>
+    <iframe id="searchIF" src="about:blank" style="width: 70%; height: 600px;"></iframe>
 </body>
 </html>

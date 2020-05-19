@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    </style>
+    <script type="text/javascript">
+        // HTML에 고정시켜 쓰는 정적 이벤트
+        var viewEvent = function() {
+            // 이벤트 리스너 안에서 this 키워드를 사용하면 이벤트가 발생한 객체를 찾을 수 있음
+            // 이벤트 발생 객체
+            console.log(this.innerHTML);
+        };
+        // 동적 이벤트
+        window.onload = function() {
+            // 이벤트가 발생한 것 자체도 개체로 봄.
+            // event 안에는 이벤트가 발생했을 때의 정보가 들어감.
+            document.getElementById('h1').onclick = function(event){
+                // console.log(this.innerHTML);
+                this.innerHTML = 'BOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\nBOOOOOOOOOOOOOOOOOOOOM\n'
+                // 클릭의 지점을 구하는 코드
+                console.log(event.x);
+                console.log(event.y);
+
+                // 어떤 키가 눌렸는지 알 수 있는 코드
+                console.log('alt' + event.altKey);
+                console.log(event.shiftKey);
+                console.log(event.ctrlKey);
+            };
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="EVENT" onclick="viewEvent()"/>
+    <hr/>
+    <div onclick="viewEvent()">클릭하세요</div>
+    <h1 id="h1">클릭하세욧</h1>
+</body>
+</html>

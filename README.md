@@ -1,3 +1,6 @@
+## 질문거리
+웹 크롤링이 잘 안되는 이유?
+
 #### :date: 2020.05.19
 moveTo() 메서드를 실행할 때 uncaught DOMexception 에러<br>
 local server를 사용하는 게 아니라 단순하게 c:/로 시작해서 html 파일을 열었기 때문에 생긴 문제.<br>
@@ -14,4 +17,28 @@ html(text : string)<br>
 html -> 객체화 -> 메모리 상주 -> DOM Tree <- javascript</pre>
 개발자 도구(F12)에서 html 트리를 DOM Tree라고 함<br>
 
-document
+document. 사용법 익히기
+
+이벤트 이름, 이벤트 속성, 이벤트 리스너를 찾아 볼 것
+마우스
+키보드
+...이벤트
+
+* onclick
+* onload (html : window)
+* onXXX 
+
+JAVA의 첫걸음 읽을 부분
+ - 자바 언어 소개
+ - 이클립스 - 스프링 개발할 것이라 쓸 것. 인텔리제이는 Android Studio
+ - Java에는 함수가 없고 메서드가 있음.
+ - Ch 6,7,8 = 객체 이론. 클래스를 어떻게 만들고 활용하는가
+ 
+ 5.20 일정 : Ch 2,3,4,5
+
+
+
+## 포스팅거리
+
+간편한 git logout : 자격 증명 관리자 -> windows 자격 증명 -> git:https://github.com ->제거하면 로그아웃 완료
+

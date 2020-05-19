@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    </style>
+    <script type="text/javascript">
+        var viewTag = function() {
+            
+            var h1 = document.getElementsByTagName('h1');
+            console.log(h1);
+
+            // 문서 객체 배열에 for in 반복문을 사용하면 안됨. 문서 객체 이외의 속성에도 접근하기 때문.
+            // 따라서 getElementsByTagName, getElementsByName() 메서드로 가져온 객체는 꼭 단순 for 반복문을 사용할 것
+            output = ''
+            for (var i in h1) {
+                console.log(h1[i].innerHTML);
+                output += i +'\n'
+            };
+            // for (var i = 0; i < h1.length; i++) {
+            //     console.log(h1[i].innerHTML);
+            // }
+            alert(output)
+        };
+        var viewTag2 = function() {
+            // #h1 : css
+            var h1 = document.querySelector('#h1');
+            console.log(h1);
+            console.log(h1.innerHTML);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="tag 보기" onclick="viewTag()"/>
+    <hr/>
+    <h1 id='h1'>Header1</h1>
+    <h1 id='h2'>
+        <i>Header2</i>
+    </h1>
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
