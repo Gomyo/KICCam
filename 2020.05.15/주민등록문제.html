@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 주민등록번호와 이 숫자를 곱하기
+    234567 812345
+    그리고 그 숫자를 다 더하기
+
+    그 결과를 11로 나눈 나머지를 구한 뒤 
+    4) 11에서 그 나머지를 뺀 수를 10으로 나눈 나머지가 주민등록번호의 마지막 수와 같을 경우 정답.
+
+    Number()와 parseInt()의 차이
+    Number('1000원') => NaN
+    parseInt('1000원') => 1000
+    parseInt('계좌:1000') => NaN
+    -->
+    <script type="text/javascript">
+        const mylast = 0;
+        const my =      '951102119981';
+        const compare = '234567892345';
+        var N = 0;
+
+        for (var i=0; i<my.length; i++) { 
+            N += (parseInt(my.substr(i,1)) * parseInt(compare.substr(i, 1)))
+            console.log(N)
+        };
+
+        N = (11 - (N % 11)) % 10
+        console.log(N)
+        if (mylast == N) {
+            console.log('True');
+        } else {console.log('False')}
+        
+        
+    </script>
+</body>
+</html>

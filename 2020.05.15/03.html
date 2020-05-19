@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        // 함수 : 객체를 생성하기 위한 함수(생성자)
+        // constructor : 생성자
+
+        // 생성자는 대문자로 시작
+        function Student(name, ko, en) {
+            this.name = name;
+            this.ko = ko;
+            this.en = en;
+        }
+
+        // 새로운 객체 생성 연산자
+        var std1 = new Student('몽쉘',96,98);
+        
+        
+        console.log(std1.name);
+
+        var str1 = 'helldsafsdafsao';
+        var str2 = new String('helllllo');
+        // std2 = 객체형태의 자료형
+        // 엠버필드 / 메서드
+    
+
+        console.log(str2.length);
+
+        var strlength = str2.length;
+        console.log(strlength);
+
+        // 문자
+        var char1 = str2.charAt(1);
+        
+        // 문자열의 마지막 글자
+        var char2 = str2.charAt(str2.length-1);
+        console.log(char2);
+        
+        // 문자열 추출
+        // substr(시작, 갯수) / substring (시작, 끝) / slice
+        console.log(str1.substr(6,5));
+        console.log(str1.substr(6));
+
+        console.log(str1.substring(6,11));
+        console.log(str1.slice(6,11));
+
+        // 문자/문자열 찾기
+        // indexOf (문자,시작위치) / lastIndexOf
+        console.log(str1.indexOf('l',2));
+
+        console.log(str1.lastIndexOf('d'))
+
+        // uppercase
+        var data = 'abc';
+        console.log(data.toUpperCase());
+        console.log('abc'.toUpperCase());
+        console.log('ABC'.toUpperCase());
+
+        // 문자열 치환
+        // replace 하나만
+        console.log(str1);
+        console.log(str1.replace('hell','안녕'));
+
+        str3 = 'hello world hello';
+        console.log(str3.replace(/Hello/gi, '안녕'));
+
+        // 문자열 연결 (연장같다)
+        console.log (str1.concat('1','2','3'));
+
+        // 문자열 분리 - Object 형으로 반환
+        var data2 = '사과,딸기,수박';
+        var arr = data2.split(',');
+        console.log(arr);
+        console.log(typeof(arr));
+
+        for (var i in arr) {
+            console.log(arr[i]);
+        }
+
+        function capi(string) {
+            var str = string.split(' ');
+            for (var i in str) {
+                str[i] = str[i].charAt(0).toUpperCase() + str[i].substring(1);
+            }
+            return str.join(' ');
+        };
+
+        console.log(capi('hong gil dong'))
+    </script>
+</body>
+</html>

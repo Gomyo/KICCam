@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var gugudan = function() {
+            var str = '';
+            for (var dan=0; dan<arguments.length; dan++) {
+                str += '<tr>';
+                for (var i=1; i<=9; i++) {
+                    str += '<td>' + arguments[dan] + 'X' + i + '=' + (arguments[dan]*i) + '</td>';
+                }
+                str += '</tr>'
+            }
+        return str;
+        };
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        document.write('<table border="1">');
+        document.write(gugudan(1));
+        document.write(gugudan(3,5));
+        document.write('</table>');
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 생성</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        // 객체 생성
+        var product1 = {}
+        // product1 typeof = object
+
+        var product2 = {
+            // 멤버변수명 : 값
+            name : '7D 건조망고',
+            type : '당절임',
+            component : '망고, 설탕, 기타',
+            region : '필리핀'
+        }
+        console.log(product2['name']);
+        // . 객체 참조 연산자
+        console.log(product2.name);
+
+        // 값 변경 가능
+        product2.name = '2D 건조딸기'
+        console.log(product2.name);
+        console.log(product2);
+    </script>
+</body>
+</html>

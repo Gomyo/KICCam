@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table {
+            width: 300px;
+            text-align: center;
+            background-color: white;
+        }
+    
+        table,
+        td {
+            border: 1px solid black;
+            width:1000px;
+        }
+    </style>
+    <script type="text/javascript">
+        document.write('<table>')
+        for (var i=0; i<=9; i++) {
+            document.write('<tr></tr>')
+            for (var j=0; j<=9; j++) {
+                if (i==0){
+                    if (j == 0){
+                        document.write('<td></td>')
+                    }
+                    else{
+                        document.write('<td>')
+                        document.write('X'+j)
+                        document.write('</td>')
+                    }
+
+                }
+                else{
+                    if (j==0){
+                        document.write('<td>')
+                        document.write(i+'단')
+                        document.write('</td>')
+                    }
+                    else{
+                        document.write('<td>')
+                        document.write(i+'X'+j+'='+i*j)
+                        document.write('</td>')
+                    }
+                }   
+            }
+        }
+        document.write('</table>')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

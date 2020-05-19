@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        // 형변환 관련 함수
+        // str to int
+        var data = "10";
+        var sum1 = "10" + 10;
+        var sum2 = Number("10")+20;
+
+        console.log(sum1)
+        // 1010
+        console.log(sum2)
+        // 30
+
+        var data1 = Number('10월'); // Nan(Not a Number)
+        var data2 = parseInt('월10일'); //처음에 만나는 게 숫자이면 잘라주고, 아니면 NaN
+        console.log(data1);
+        console.log(data2);
+    </script>
+</body>
+</html>

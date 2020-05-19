@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    </style>
+    <script type="text/javascript">
+    // documnet - 입력값 검사 => form
+    // 그러면 form - 배열 형태로 받아옴
+    // html 나오고 js 나오고 반복하면 매우 좋지 않음.
+    // 그래서 onload 메서드 사용!
+    // HTML 문서를 다 일고 나서 DOM을 만들면 js를 불러온다!
+    window.onload = function() {
+        console.log(document.forms.length);
+
+        console.log(document.forms[0].action);
+        console.log(document.forms[1].action);
+        // 아래의 방법을 더 많이 씀
+        console.log(document.forms.joon1.action);
+        console.log(document.forms.joon2.action);
+    }
+    </script>
+</head>
+<body>
+    <!-- 여기서 폼을 두개 선언 -->
+    <form action="test1.jsp" name="joon1"></form>
+    <form action="test2.jsp" name="joon2"></form>
+    
+</body>
+</html>

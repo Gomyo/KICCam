@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        var str = "자바스크립트";
+        var encStr = encodeURIComponent(str);
+        // RESTapi가 이거구나! data에 URI를 부여한 것이다!
+        console.log(str);
+        console.log(encStr);
+        // encode 된 string을 검색어 대신 넣으면 검색이 가능하다.
+        var decStr = decodeURIComponent(encStr);
+        console.log(decStr);
+
+    </script>
+</body>
+</html>

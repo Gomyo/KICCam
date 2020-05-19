@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var checkjumin = function jumin(strJumin){
+            const mylast = 0;
+            var my = '951102119981';
+            const compare = '234567892345';
+            var N = 0;
+
+            for (var i=0; i<my.length; i++) { 
+                N += (parseInt(my.substr(i,1)) * parseInt(compare.substr(i, 1)))
+                console.log(N)
+            };
+
+            N = (11 - (N % 11)) % 10
+            console.log(N)
+            if (mylast == N) {
+                return true;
+            } else {return false;}
+        }
+        checkjumin();
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+    var strJumin = '1234561234567';
+    if (checkjumin (strJumin)) {
+        console.log('정확');
+    }
+    else {
+        console.log('부정확')
+    }
+
+    </script>
+</body>
+</html>

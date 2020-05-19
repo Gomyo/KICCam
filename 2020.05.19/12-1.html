@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    </style>
+    <script type="text/javascript">
+        var checkfrm = function() {
+            console.log(typeof document.frm.c); // object
+            console.log(document.frm.c.length); // 3
+
+            // checked 상태만 출력
+            for (var i=0; i<document.frm.c.length; i++) {
+                if (document.frm.c[i].checked) {
+                    console.log(document.frm.c[i].value);
+                };
+            };
+        };
+        
+        // var checkAll = function() {
+        //     // 이걸 false로 바꾸는 이유는 무엇인가?
+        //     document.frm.c[0].checked = false;
+        //     for (var i=0; i<document.frm.c.length; i++) {
+        //         document.frm.c[i].checked = true;
+        //     }
+        // }
+        // 젠체 체크 했다 풀었다 코드
+        var checkAll = function() {
+            for (var i = 0; i < document.frm.c.length; i++) {
+                if (document.frm.c[i].checked) {
+                    document.frm.c[i].checked = false;
+                }
+                else {
+                    document.frm.c[i].checked = true;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="test1.jsp" name="frm">
+        <!-- name을 같게 하면 배열로 취급 -->
+        <input type="checkbox" name="c" checked value="apple"/>사과<br><br>
+        <input type="checkbox" name="c"  value="strawberry" />딸기<br><br>
+        <input type="checkbox" name="c"  value="pear" />배<br><br>
+        <input type="button" value="검사하기" onclick="checkfrm()"/>
+        <input type="button" value="전체선택" onclick="checkAll()" />
+    </form>
+    <script type="text/javascript">
+    </script>
+</body>
+</html>

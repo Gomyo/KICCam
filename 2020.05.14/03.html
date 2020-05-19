@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // 함수의 파라메터로 함수 선언을 넣는다.
+        var callback = function() {
+            console.log('함수 호출');
+        };
+        var callFunc = function(data) {
+            console.log(data);
+            data();
+        }
+        callFunc(callback);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

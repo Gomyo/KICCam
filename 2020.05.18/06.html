@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var child;
+        var openWindow = function() {
+            child = open('https://m.daum.net', 'frm', 'width=640, height=960');
+        };
+
+        var closeWindow = function() {
+            child.close();
+        };
+        openWindow(child);
+    </script>
+    <!-- <a href="javascript:openWindow()">창열기</a>
+    <a href="javascript:closeWindow()">창닫기</a> -->
+</body>
+</html>

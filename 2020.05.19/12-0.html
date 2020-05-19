@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    </style>
+    <script type="text/javascript">
+        var checkfrm = function() {
+            /*
+            console.log(document.frm.c1.checked);
+            console.log(document.frm.c2.checked);
+            console.log(document.frm.c3.checked);
+
+            console.log(document.frm.c1.value);
+            console.log(document.frm.c2.value);
+            console.log(document.frm.c3.value);
+            */
+            console.log(document.frm.c1.checked ? document.frm.c1.checked : '없음');
+            console.log(document.frm.c2.checked ? document.frm.c2.checked : '없음');
+            console.log(document.frm.c3.checked ? document.frm.c3.checked : '없음');
+        };
+    </script>
+</head>
+<body>
+    <form action="test1.jsp" name="frm">
+        <input type="checkbox" name="c1" checked value="apple"/>사과<br><br>
+        <input type="checkbox" name="c2"  value="strawberry" />딸기<br><br>
+        <input type="checkbox" name="c3"  value="pear" />배<br><br>
+        <input type="button" value="검사하기" onclick="checkfrm()"/>
+    </form>
+    <script type="text/javascript">
+    </script>
+</body>
+</html>

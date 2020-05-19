@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // 가변인자
+        var func1 = function(data1) {
+
+        };
+        var func2 = function(data1, data2) {
+
+        };
+        var vFunc = function() {
+            // argumnet 배열
+            console.log(arguments);
+            console.log(arguments.length);
+            console.log(arguments[0]);
+            for (var i in arguments) {
+                console.log(i);
+            }
+        }
+        vFunc(1);
+        vFunc(1,2);
+        vFunc(1,2,3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

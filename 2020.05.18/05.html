@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var output = '';
+        for (var key in window) {
+            output += '* ' + key + '\n'
+        }
+        console.log(output)
+
+        console.log(window.screenTop);
+        console.log(window.screenLeft);
+
+        // tab 보임
+        // window.open()
+        // 팝업 형식으로 창을 띄움
+        // open( 'https://m.daum.net');
+
+        // top / left 위치
+        // width / height 크기
+
+        open('https://m.daum.net', 'frm', 'top=100, left=100,width=640, height=960');
+
+
+    </script>
+</body>
+</html>

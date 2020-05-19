@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        // location
+        // 현재 웹페이지의 경로
+        // console.log(location.href);
+
+        // redirect - 자동이동
+        // location.href = 'https://m.daum.net';
+
+        var goUrl = function(url) {
+            location.href = url;
+        };
+    </script>
+    <button onclick="goUrl('https://m.naver.com')">네이버</button><br>
+    <button onclick="goUrl('https://m.daum.com')">다음</button><br>
+</body>
+</html>

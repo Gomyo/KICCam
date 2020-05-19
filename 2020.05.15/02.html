@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        function ms(name, ko, en) {
+        var obj = {
+            m_name : name,
+            m_ko : ko,
+            m_en : en,
+
+            getSum: function() {
+                return this.m_ko + this.m_en;
+            }
+
+        };
+        return obj;
+    }
+    var std1 = ms('준원',90,95);
+    var std2 = ms('이라',100,99);
+    
+    console.log(std1);
+    console.log(std2.m_ko);
+    console.log(std2.m_name);
+    console.log(std2.m_name + ':' + std2.getSum());
+
+    </script>
+</body>
+</html>

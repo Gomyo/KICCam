@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var arr = Array(11,22,33,44,55);
+
+        // 배열 각 요소에 *2
+        var result = arr.map(function(e){
+            return e*2;
+        });
+        console.log(result);
+
+        result = arr.filter(function(e){
+            return e <30;
+        });
+        console.log(result);
+    </script>
+</body>
+</html>

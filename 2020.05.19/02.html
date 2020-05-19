@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    .myButton {
+	box-shadow:inset 0px 1px 0px 0px #e184f3;
+	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+	background-color:#c123de;
+	border-radius:6px;
+	border:1px solid #a511c0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9b14b3;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+	background-color:#a20dbd;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+        
+    </style>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var child;
+
+        var openWindow = function() {
+            // window01.html - 자신이 가지고 있는 페이지
+            child = open('https://m.daum.net','frm','width=600,height=600');
+        };
+        var closeWindow = function() {
+            child.close();
+        };
+    </script>
+    <!-- 
+        이벤트 driven 프로그램 방식
+        이벤트 : 클릭
+        a : click + 함수 
+-->
+    <a href="javascript:openWindow()">창열기</a><br><br>
+    <input type="button" value="클릭" onclick="openWindow()"/><br><br>
+    <button onclick="openWindow()">클릭</button><br><br>
+    <!-- 
+        CSS 버튼 사이트
+        https://www.bestcssbuttongenerator.com/ 
+    -->
+    <div class="myButton" onclick="openWindow()">클릭</div>
+    <div class="myButton"
+    onmouseover="openWindow()"
+    onmouseout="closeWindow()">바우스 오버</div>
+</body>
+</html>

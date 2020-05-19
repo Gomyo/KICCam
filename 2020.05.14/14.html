@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member field and Method</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        var product2 = {
+            // Member field
+            name: '7D 건조망고',
+            type: '당절임',
+            component: '망고, 설탕, 기타',
+            region: '필리핀',
+            // 메서드
+            eat: function() {
+                console.log('맛나게 먹는다');
+            },
+            test: function() {
+                console.log("오우 쉿");
+            }
+        }
+        product2.eat();
+        product2.test();
+
+        // console.log(product2);
+        var output = '';
+        for (var key in product2) {
+            output += '* ' + key + ' : ' + product2[key] + '\n';
+        }
+        console.log(output);
+
+        // 학생/점수
+        var student1 = {
+            name : 'Zac',
+            ko : 92,
+            ma : 87,
+            en : 99,
+            jp : 100
+        };
+        console.log(student1.name)
+
+        console.log('name' in student1);
+        console.log('name1' in student1);
+
+        
+        var result = '';
+        result += '이름 : ' + student1.name + '\n';
+        result += '국어 : ' + student1.ko + '\n';
+        result += '수학 : ' + student1.ma + '\n';
+        console.log(result)
+        // 위와 같은 내용을 with를 사용해 구현
+        var result = '';
+
+        with(student1){
+            result += '이름 : ' + name + '\n';
+            result += '국어 : ' + ko + '\n';
+            result += '수학 : ' + ma + '\n';
+        }
+        
+        console.log(result)
+    </script>
+</body>
+</html>

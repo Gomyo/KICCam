@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var arr = Array(1,2,3,4);
+
+        // callback - 처리용 함수를 정의
+        // forEach = 안에 for문이 내장되어있음
+        // arr.forEach(function()){
+        //     console.log('실행');
+        // }
+
+        arr.forEach (function(element) {
+            console.log('실행 : ' + element);
+        });
+        
+        // arr 내부 합계
+        var sum = 0;
+        for (var i=0; i<=arr.length; i++) {
+            sum+=arr[i];
+        }
+        console.log(sum);
+
+        // 함수 중심 프로그램으로 내부 합계
+        sum = 0;
+        arr.forEach(function(e){
+            sum+=e
+        });
+        console.log(sum);
+    </script>
+</body>
+</html>
