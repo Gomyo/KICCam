@@ -1,5 +1,3 @@
-import java.lang.ProcessBuilder.Redirect.Type;
-
 public class OperatorEx01 {
     public static void main(String[] args) {
         short s1 = 10;

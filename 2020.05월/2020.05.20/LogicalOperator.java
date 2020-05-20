@@ -15,6 +15,7 @@ public class LogicalOperator {
 
         a = 10;
         b = 20;
+        // 뒤를 아예 안보기때문에 결과가 20/20이 나옴
         System.out.println((a += 10) > 15 || (b -= 10) > 15);
         System.out.println("a = " + a + ", b = " + b);
     }
