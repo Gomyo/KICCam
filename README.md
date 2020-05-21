@@ -59,3 +59,21 @@ public이 붙는 클래스는 하나의 소스 파일에 하나만 존재한다.
 
 오류: 기본 클래스 Hello을(를) 찾거나 로드할 수 없습니다.
 https://chans-note.tistory.com/1 CLASS PATH 끝에 ;.; 추가
+
+#### 2020.05.21
+javac file.java -encoding utf8 하면 .class 파일이 생성됨
+class 파일을 자바의 exe 파일이라고 생각하면 편하다
+
+궁금했던 점 : 왜 윈도우에서만 경로에 \ (백슬래시)를 사용할까?
+[설명 링크](https://onlywis.tistory.com/26)
+
+break문이 반복문 실행의 중지라면,
+continue문은 반복문 실행의 생략을 의미
+
+책의 코드를 따라 치다가 든 생각인데, 코드를 찍은 사진을 코드로 변환시켜 줄 수는 없을까?
+
+@15db9742 배열을 print하면 배열의 hashcode가 출력된다.
+배열의 문자열을 출력하려면 toString, deepToString 메서드를 이용해야 함
+
+eval을 java로 구현하기에서 if문은 안되는데, 그 이유는 ifelse로 문자열을 비교하려면 다른 방식으로 해야 하기 때문!
+우선 switch 문을 사용하자.
