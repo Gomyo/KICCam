@@ -1,5 +1,3 @@
-import java.io.ObjectInputStream.GetField;
-
 public class ParameterConstructor {
     String name;
     int age;
