@@ -43,8 +43,10 @@ JAVA의 첫걸음 읽을 부분
 
 ## 포스팅거리
 
+md emoji 클릭하면 복사되는 프로그램을 만들어 볼까?
 간편한 git logout : 자격 증명 관리자 -> windows 자격 증명 -> git:https://github.com ->제거하면 로그아웃 완료
-
+5.25 : ArrayMain01
+객체지향 프로그래밍의 4대 개념 (OOP is A P.I.E) 시리즈 포스팅
 
 #### 2020.05.20
 앞으로의 방향
@@ -124,3 +126,62 @@ Class
 
 생성자의 역할  
 멤버 변수의 설정  
+
+#### 2020.05.25
+
+클래스
+    멤버필드
+        인스턴스 / 클래스
+    메서드
+        지역변수 / 제어문
+        *인스턴스 / 클래스
+        *오버로딩(중복정의)
+        *main(실행메서드 -> 실행클래스)
+        *constructor
+            구별법
+                클래스명과 동일
+                리턴없음
+            역할
+                메모리 생성
+                멤버변수 초기화
+{
+    블럭
+    블럭 내부에 생성된 변수를 지역변수라고 함
+}
+
+**플로우차트**
+
+
+**UML 다이어그램 - 프로그램의 기획**
+Class diagram
+    클래스의 연관 관계
+Sequence diagram
+    프로그램의 흐름
+Usecase diagram
+    기능구조
+
+툴
+    StarUML
+    Rational Rose
+    Amateras - Eclipse Plugin
+
+
+클래스의 연관
+
+    1. Instance : 포함관계
+        class {className} {
+            int data;
+            className data;
+
+            String data;
+        }
+    2. Inheritance : 상속관계. 부모의 재산 : 멤버 변수와 메서드
+
+    직원
+    
+    직원의 종류 :       
+                    임원                직원
+                                        근로계약기간
+                                        연봉
+    
+    
