@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script></script>
+</head>
+<body>
+    <script type="text/javascript">
+        document.write('')
+        var a = 3;
+        var b = 4;
+        // 자바스크립트는 함수를 function으로 사용한다.
+        function evenOrOdd(num) {
+            if (num % 2 == 0) { return "짝" } else { return "홀" } 
+        }
+
+        console.log(evenOrOdd(a));
+        console.log(evenOrOdd(b));
+        
+        let time = [7,12,18]
+        
+        // js for문도 딱히 다른 건 없다.
+        function timeCheck(time) {
+            if (time <= 9) {
+                console.log('아침')
+            }
+            else if (time <= 12) {
+                console.log('점심')
+            }
+            else {
+                console.log('저녁')
+            }
+        }
+        for (let i in time) {
+            timeCheck(time[i]);
+        }
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type="text/css">
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+        td {
+            background-color: aqua;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <script> 
+        function gugudan(x) {
+                for (i = 1; i <= 9; i++) {
+                    document.write('<tr>' + '<td align="center">' + x + 'X' + i + '=' + x * i + '</td>' + '</tr>')
+                }
+            }
+        document.write('<table border = "1" width = "200">');
+        for (x = 2; x <= 9; x++) {
+                gugudan(x);
+            }
+        document.write('</table>');</script>
+</head>
+<body>
+    <script type="text/javascript">
+        function gugudan(x){           
+            for (i=1; i<=9; i++) {
+                document.write(x + 'X' + i + '=' + x * i + '<br>')
+                console.log(x+'X'+i+'='+x * i + '\n')
+            }
+        }
+        for (x=2; x<=9; x++) {
+            gugudan(x);
+        }
+    </script>
+    
+</body>
+</html>

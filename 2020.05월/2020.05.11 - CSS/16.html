@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type="text/css">
+        div { 
+            /* layer */
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        #d1 {
+           top: 0px;
+           left: 0px;
+           background-color: aqua; 
+           z-index: 5;
+        }
+        
+        #d2 {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background-color: green; 
+            z-index: 4;
+        }
+        
+        #d3 {
+           top: 200px;
+           left: 200px;
+           background-color: red; 
+           z-index: 3;
+        }
+        
+        #d4 {
+           top: 300px;
+           left: 300px;
+           background-color: palegreen; 
+           z-index: 2;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">nonononono</div>
+    <div id="d2">nonononono</div>
+    <div id="d3">nonononono</div>
+    <div id="d4">nonononono</div>
+</body>
+
+</html>

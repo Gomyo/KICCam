@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- table 말고도
+        div(p, span) + css를 사용해 영역이 있는 박스(네모) 영역을 만들 수 있다. -->
+    <style type="text/css">
+        #i1 {
+            width: 600px;
+            height: 300px;
+            border: 1px solid red;
+            padding: 50px 10px 20px 50px
+        }
+        
+        #i2 {
+            width: 600px;
+            height: 300px;
+            border: 1px solid red;
+            padding: 10px 10px 10px 10px
+        }
+        
+        #i3 {
+            width: 200px;
+            height: 100px;
+            border: 1px solid red;
+            padding: 10px 10px 10px 10px;
+            border-radius: 35px;
+        }
+        @font-face {
+            font-family: myFont;
+            src: url('../fonts/BlackHanSans-Regular.ttf')
+        }
+
+        .myButton {
+            box-shadow:inset 0px 1px 0px 0px #f9eca0;
+            background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+            background-color:#f0c911;
+            border-radius:6px;
+            border:1px solid #e65f44;
+            display:inline-block;
+            cursor:pointer;
+            color:#c92200;
+            font-family:myFont;
+            font-size:15px;
+            font-weight:bold;
+            padding:6px 24px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #ded17c;
+        }
+        .myButton:hover {
+            background:linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+            background-color:#f2ab1e;
+        }
+        .myButton:active {
+            position:relative;
+            top:1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="myButton">중 화 요 리</div>
+</body>
+</html>

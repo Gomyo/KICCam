@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type="text/css">
+        /* 
+        Font property,value
+         */
+        #i1 {
+            font-family: '휴먼둥근헤드라인';
+            font-size: 150px;
+        }
+
+        #i2 {
+            font-family: '굴림';
+            font-style: italic;
+        }
+
+        #i3 {
+            font-family: '돋움';
+            font-weight: bold;
+        }
+
+        /* Client 입장에서는 없는 폰트를 푸시해주는 font face */
+        @font-face {
+            font-family: BlackHanSans;
+            src: url('../fonts/BlackHanSans-Regular.ttf');
+        }
+
+        #i4 {
+            font-family: BlackHanSans;
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="i1">배고프당</div>
+    <div id="i2">굴림체</div>
+    <div id="i3">돋움체</div>
+    <div id="i4">아 이거구나<br>배민 글씨체같다<br>우리가 어떤 민족입니까<br>배 민 배 민 ~~~배민~~~!</div>
+
+</body>
+
+</html>
