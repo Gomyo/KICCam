@@ -168,20 +168,56 @@ Usecase diagram
 
 클래스의 연관
 
-    1. Instance : 포함관계
+    1. Instance : 포함관계 has a
         class {className} {
             int data;
             className data;
 
             String data;
         }
-    2. Inheritance : 상속관계. 부모의 재산 : 멤버 변수와 메서드
+    2. Inheritance : 상속관계. 부모의 재산 : 멤버 변수와 메서드 is a
 
-    직원
-    
-    직원의 종류 :       
-                    임원                직원
-                                        근로계약기간
-                                        연봉
-    
-    
+        형식
+        
+        class {child,sub} extends {parent,super}   {
+
+        }
+
+        UML / 초기화블럭, 생성자는 상속 불가 
+
+        오버라이딩 (ADS @Override가 여기서 나온 거였구나)
+
+#### 2020.05.26
+package가 다르다면, 굳이 import 하지 않으면 class를 가져다 쓰지 않는다.
+즉, package가 다르면 class 명이 중복 되어도 된다.
+
+지금 우리는 디렉토리를 구분하지 않고 있는데, 나는 일자에 따라 분류하고 있다.
+package를 선언하지 않았지만, 알아서 선언이 되는 것인지 = 아니다. package 선언을 해야 가능
+
+기본적으로 package를 쓰는 것이 좋은지
+
+final
+    지역변수    -상수
+    멤버변수
+
+    메서드      -오버라이드 금지
+    클래스      -상속 금지
+
+같은 package 안에 있는 class를 가지고 오더라도 import를 해야 하는가?
+- ㄴㄴ
+
+eclipse 환경설정
+
+font - basic - font font 
+
+Spelling unable
+
+workspace - text file encoding을 utf-8로
+
+**clipse**
+1. 프로젝트(Java)
+    패키지(X / default package)
+
+생성자 만들 때
+생성자 이름 치고 Ctrl + Space : 자동 완성
+
