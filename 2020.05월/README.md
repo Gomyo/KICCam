@@ -221,3 +221,26 @@ workspace - text file encoding을 utf-8로
 생성자 만들 때
 생성자 이름 치고 Ctrl + Space : 자동 완성
 
+#### 2020.05.27
+
+상속
+has a : 멤버필드
+is a : 상속
+    extends
+    overriding
+        조건
+    super
+    super() / this()
+
+
+editor : 소스를 편집
+IDE : Integrated Development Environment 
+    - 통합 개발자 환경
+    - Code Assistance
+    - Debugging
+    - 자동 컴파일(바로 실행 가능)
+
+개발 순서
+    프로젝트
+        패키지
+            클래스
