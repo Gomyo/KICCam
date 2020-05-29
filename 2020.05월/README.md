@@ -154,7 +154,7 @@ Class
 
 **UML 다이어그램 - 프로그램의 기획**
 Class diagram
-    클래스의 연관 관계
+    클래스의 구성 요소와 연관 관계
 Sequence diagram
     프로그램의 흐름
 Usecase diagram

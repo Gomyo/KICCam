@@ -32,6 +32,6 @@ public class LoginTest {
         LoginResult result = login.doLogin("hong","12345");
         result.printResult();
 
-        result = login.doLogin
+        result = login.doLogin;
     }
 }

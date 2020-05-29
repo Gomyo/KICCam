@@ -6,11 +6,11 @@ public class looplabel {
            inner:for (int j=1; j<10; j++){
                if (j==5) {
                 // break;
-                // break inner;
+                break inner;
                 // break outer;
                 // continue;
                 // continue inner;
-                continue outer;
+                // continue outer;
                }
                System.out.printf("%d*%d=%d\t", i,j,i*j);
            } 
