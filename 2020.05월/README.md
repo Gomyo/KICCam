@@ -244,3 +244,97 @@ IDE : Integrated Development Environment
     프로젝트
         패키지
             클래스
+
+#### 2020.06.01
+
+        변수
+        상수
+        *식별자 규칙
+            문법
+            *팀원간의 룰
+            패키지명, 클래스명, 메서드명, 변수명
+    연산자
+        단항 : 부호 / 증감 (++ --)
+        이항 : 나머지 전부
+        삼항 : ? (if)
+    형변환
+        자동형변환
+        묵시적형변환
+
+제어
+    조건에 의한 분기
+        - 선택 : 중첩 if (if else / switch)
+        - 필터링 : 단순조건
+    조건에 의한 반복
+        - 유한 루프
+            for
+                일반
+                향상된 for ( : )
+        - 무한 루프
+            while
+            do ~ while
+    기타 : 반복문의 제어 목적. continue / break / label
+
+
+- 객체중심 프로그램 언어 문법
+
+class 
+
+jdk 1.10부터 module이 나옴
+module
+    package
+        package / import , package comfile method (-d ./ 옵션 기억하기)
+
+        interface
+        class
+            일반클래스
+            추상클래스
+                멤버변수
+                    인스턴스 / 클래스
+                메서드
+                    인스턴스 / 클래스
+                    추상 메서드 (abstract class + method = addFuel() 생각하기)
+
+                    오버로딩
+
+                    생성자
+                    메인메서드
+
+                    가변인자 Variable Argument (파라미터를 모르겠을 때 임의의 값을 받게끔 하는 메서드)
+                        Warning! 오버로딩과 같이 사용 불가
+                초기화블럭
+                    종류
+                내부클래스
+                    종류
+        enum
+        exception
+
+캡슐화(은닉화)
+    접근지정자
+    private, default, protected, public
+상속화
+    인터페이스(interface) / 클래스(class)
+    오버라이드
+    super, super()
+    Object
+추상화
+    Interface
+    abstract class
+다형성
+    형변환
+    오버라이드
+
+API(라이브러리)
+package 단위로 제공
+    - class -> *.jar 인스톨 개념이 아니라 원하는 위치에 복사하면 끝
+- Oracle 제공
+    java : 기본 패키지
+        java.lang 기본 패키지. import not needed
+            Object
+            String(Javascript)
+
+    javax : 확장 패키지
+- Third part (* 제 3의 업체에서 제공)
+
+문자열 관련된 클래스 
+String / StringBuffer / StringBuilder
